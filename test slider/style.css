@@ -1,0 +1,347 @@
+body{
+    padding-top: 15px;
+}
+/*Header*/
+.row .btn-danger {
+    font-size: 13px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    border-radius:4px;
+    background-color:#ff8200;
+    background: linear-gradient( 90deg, rgb(255,79,88) 0%, rgb(253,112,72) 100%);
+}
+.number{
+    font-size: 35px;
+    font-family: "Montserrat";
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.header_text {
+    font-size: 13px;
+    font-family: "Montserrat";
+    color: #000000;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+}
+/*Navigation*/
+.navbar{
+    
+    position: relative;
+    min-height: 20px;
+}
+.navigation{
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 5;
+    background-color:#000000a8;
+    width: 100%;
+} 
+.navigation .navbar {
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+.container .nav-justified>li {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+ul{
+    padding: 0;
+}
+li:after{
+    content: " ";
+    background:#a09d9d ;
+    width: 1px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+li:last-child:after{
+    content: " ";
+    background:inherit ;
+    width: 1px;
+    height: 20px;
+    margin-top: 9px;
+}
+.navigation a{
+    padding: 10px;
+    text-decoration: none;
+    color:#a09d9d;
+}
+.navigation a:hover{
+    text-decoration: none;
+    color:#ffffff;
+}
+/*Carusel*/
+/* .carousel{
+    height: calc(100vh - 66px);
+} */
+.carousel .carousel-indicators{
+    left: 26%;
+    bottom: 45%;
+
+}
+
+.item .carousel-caption{
+    right: 45%;
+    top: 5%;
+    left: 20%;
+    text-align: left;
+}
+.left_line{
+    border-left:5px solid #ffffff;
+    transform: skewX(-20deg);
+    padding-left: 15px;
+}
+.title {
+    margin-bottom: 10px;
+    font-size: 70px;
+    text-align: left;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.702);
+    /* transform:skewX(20deg); */
+    color:#000000;
+}
+.subtitle{
+    display: inline-block;
+    text-decoration: underline;
+    font-size: 36px;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.702);
+    /* transform:skewX(20deg); */
+}
+.square {
+    margin-left: 15px;
+    display: inline-block;
+    font-size: 29px;
+    font-family: "Intro";
+    color:#ffffff;
+    background-image: linear-gradient( 0deg, rgb(42,235,42) 0%, rgb(0,117,0) 100%);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    /* transform:skewX(20deg); */
+}
+  
+.btn_title {
+    margin: 25px 0 25px 0;
+    font-size: 19px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.btn_slide{
+    font-size: 20px;
+    font-family: "Montserrat";
+    color:#ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.13;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-image: linear-gradient( 90deg, rgb(255,79,88) 0%, rgb(253,112,72) 100%);
+    max-width: 225px;
+    height: 45px;
+
+}
+.carousel .carousel-control.left {
+    opacity: 1;
+    background:transparent;
+    background-image: none;
+    bottom: -2%;
+    left: 11%;
+}
+.carousel .carousel-control.right {
+    opacity: 1;
+    background:transparent;
+    background-image: none;
+    bottom: -2%;
+    right:60%;
+}
+/*Content*/
+.content_block{
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    margin: 0;
+    background-color:rgba(255, 255, 255, 0.702);
+}
+.content_item{
+    text-align: center;
+ }
+.container.content {
+    position: absolute;
+    width: 100%;
+
+}
+
+
+@media(max-width:768px){
+    .content_block{
+        padding-top: 15px;
+        position: relative;
+    }
+    .content_item{
+        text-align: center;
+     }
+    .container.content {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+    }   
+    .content_block .content_item img{
+        height: 68px;
+        width: 68px;
+    }
+    .navigation{
+        position: relative;
+    }
+    li:after{
+        display: none;
+    }
+
+    .navigation .navbar {
+        flex-direction: column;
+    }
+    .container .nav-justified>li {
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    .carousel .carousel-control.left {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 15%;
+        background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    
+    }
+    .carousel .carousel-control.right {
+        right: 0;
+        left: auto;
+        background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+ 
+    }
+    .carousel .carousel-indicators{
+        bottom: 10px;
+        left: 50%;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+    .square{
+        font-size: 22px;
+    }
+    .btn_title{
+        margin: 15px 0 15px 0;
+        font-size: 15px;
+    }
+    .btn_slide{
+        font-size: 10px;
+        height: 30px;
+    }
+    .navigation{
+        background-color:#ffffff;
+    }
+    .navigation a{
+        color:#000000;
+    }
+    .navigation a:hover{
+        color:#a09d9d;
+    }
+    .carousel .carousel-control.right {
+      bottom: 0%;
+    }
+}
+@media(max-width:320px){
+    /*Header*/
+    .header_logo{
+        width: 89px;
+        height: 12px;
+    }
+    .row .btn-danger {
+        font-size: 13px;
+    }
+    .number{
+        font-size: 20px;
+    }
+    .header_text {
+        font-size: 10px;
+    }
+    a{
+        font-size: 10px;
+    }
+    /*Carousel*/
+    /* .carousel {
+        height: 500px;
+        width: 100%;
+    } */
+
+    .item .carousel-caption {
+        top: -25%;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+    .subtitle{
+        font-size: 10px;
+        margin: 0;
+    }
+    .square{
+        font-size: 10px;
+        margin: 0;
+    }
+    .btn_title{
+        margin: 5px 0 5px 0;
+        font-size: 6px;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .btn_slide{
+        font-size: 8px;
+        height: 25px;
+    }
+    .content_block .content_item img{
+        height: 58px;
+        width: 58px;
+    }
+    .content_block .content_item h3 {
+        font-size: 15px;
+    }    
+    .content_block .content_item p{
+        font-size: 8px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
